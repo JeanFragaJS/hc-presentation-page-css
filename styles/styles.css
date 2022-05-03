@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  /* background-color: ; */
+  background-image: url('../images/bg-saturno.webp');
+  background-position:  70% top;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  /* background-size: cover; */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 30px;
+  box-shadow: 0px 2px 8px 1px violet;
+  /* border-bottom: 20px ridge violet; */
+  margin-bottom: 45px;
+}
+
+header ul  {
+  display: flex;
+}
+
+header ul li {
+  padding: 8px;
+}
+
+header ul li a  {
+  color: violet;
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: rgb(148, 54, 148);
+  text-decoration: underline;
+}
+
+header img {
+  width: 10%;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .name h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.container .name h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#arrow span {
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite; /*steps(5) é o numero do step */
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 400ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 400ms;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  max-width: 600px; 
+  margin: 0 auto;
+  margin-top: 5px;
+  font-weight: 300;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(9, 12, 41, 0.3);
+}
+
+
+
+
+.form {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.form p {
+  margin: 20px auto;
+  font-weight: 500;
+}
+
+.form input {
+  width: 50%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 12px 0px 0px 12px;
+  margin-right: -4px
+
+}
+
+.form button {
+  width: 15%;
+  padding: 15px 10px;
+  font-weight: 600; 
+  font-size: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 0px 12px 12px 0px;
+  background: linear-gradient(to right, violet 50%, rgb(24, 21, 64) 50%);
+  background-size: 200% 100%; /* width- height*/
+  background-position: right bottom;
+  cursor: pointer;
+  transition: all 300ms ease-out; 
+
+  
+}
+
+.form button:hover {
+  background-position: left bottom;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .form {
+    min-width: 100%;
+  }
+}
+
+
+@media only screen and (max-width:460px) {
+  .container .name h1 {
+    font-size: 50px;
+  }
+  
+  .container .name h5 {
+    font-size: 30px;
+  }  
+
+  #about p {
+    max-width: 80%; 
+    text-align: justify;
+   
+  }
+}
+
